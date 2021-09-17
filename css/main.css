@@ -1,8 +1,8 @@
 html {
+    box-sizing: border-box;
   font-family: Patua One, Georgia;
   text size; 2rem;
   line-height: 1.5;
-  box-sizing: border-box;
 }
 
 *,
@@ -11,12 +11,30 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:
+}
+
 img {
   width: 100%;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+
+
+}
+
+.banner img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
 }
