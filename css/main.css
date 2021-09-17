@@ -1,8 +1,8 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Patua One, Georgia;
-  text size; 2rem;
   line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -15,7 +15,8 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 img {
@@ -23,10 +24,18 @@ img {
   display: block;
 }
 
+nav {
+  display: flex;
+}
+
 h1 {
   margin: 0;
+  text size; 2rem;
+}
 
-
+h2 {
+    font-size: 1rem;
+    color: #30658d;
 }
 
 .banner img {
