@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
   background-color: #f2f1ed;
 }
@@ -68,8 +68,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #30658d;
+  font-family: "Patua One", sans-serif;
+  margin-bottom: 0;
 }
 
 img {
@@ -89,13 +91,17 @@ body {
     "banner banner"
     "main main";
   width: 100%;
+  padding: 1em;
 }
 
 main figure {
   width: 100%;
-  margin: 0;
 }
 
 main figure img {
   width: 100%;
+}
+
+p {
+  margin: 0;
 }
