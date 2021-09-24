@@ -11,12 +11,21 @@ html {
   box-sizing: inherit;
 }
 
-
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  padding: 1rem;
+}
+
+.logo {
+  width: 14rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 10;
+  margin: 0;
+  align-self: end;
   padding: 1rem;
 }
 
@@ -37,13 +46,7 @@ img {
   padding: 1rem;
 }
 
-.logo {
-  width: 14rem;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
-  margin: auto;
-}
+
 
 .pano {
   grid-column: 1 / -1;
