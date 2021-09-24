@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: 'Patua One', serif;
   line-height: 1.5;
   background-color: #f2f1ed;
 }
@@ -11,23 +11,24 @@ html {
   box-sizing: inherit;
 }
 
+
+header {
+  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 1rem;
+}
+
 body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "banner banner"
     "main main";
   gap: 1rem;
-}
-
-header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
 }
 
 img {
@@ -41,7 +42,7 @@ img {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
-  bottom: 0;
+  margin: auto;
 }
 
 .pano {
@@ -59,7 +60,7 @@ ul {
 
 nav {
   display: flex;
-  font-family: "Patua One", sans-serif;
+  font-family: 'Patua One', sans-serif;
   list-style-type: none;
   color: #fff;
   grid-area: banner;
